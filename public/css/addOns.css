@@ -1,0 +1,202 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--bg-1);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--accent);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+  .status {
+    position: absolute;
+    top: 10px;
+    right: 16%;
+    width: 22px;
+    height: 22px;
+    background-color: #747f8d;
+    border-radius: 25px;
+  }
+  .offline{
+    background-color: #747f8d;
+    -webkit-box-shadow: inset 0px 0px 6px -1px #747f8d;
+    -moz-box-shadow: inset 0px 0px 6px -1px #747f8d;
+    -o-box-shadow: inset 0px 0px 6px -1px #747f8d;
+    box-shadow: inset 0px 0px 6px -1px #747f8d;
+    opacity: 1;
+    -webkit-animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
+    -moz-animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
+    -o-animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
+    animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.dnd{
+    background-color: hsla(0, 80%, 40%, 1);
+    -webkit-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
+    -moz-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
+    -o-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
+    box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
+    opacity: 1;
+    -webkit-animation: header_NotificationCircle_ANIM_err 1.0s infinite ease-in-out;
+    -moz-animation: header_NotificationCircle_ANIM_err 1.0s infinite ease-in-out;
+    -o-animation: header_NotificationCircle_ANIM_err 1.0s infinite ease-in-out;
+    animation: header_NotificationCircle_ANIM_err 1.0s infinite ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.online{
+    background-color: #43b581;
+    -webkit-box-shadow: inset 0px 0px 6px -1px #43b581;
+    -moz-box-shadow: inset 0px 0px 6px -1px #43b581;
+    -o-box-shadow: inset 0px 0px 6px -1px #43b581;
+    box-shadow: inset 0px 0px 6px -1px #43b581;
+    opacity: 1;
+    -webkit-animation: header_NotificationCircle_ANIM_api 1.0s infinite ease-in-out;
+    -moz-animation: header_NotificationCircle_ANIM_api 1.0s infinite ease-in-out;
+    -o-animation: header_NotificationCircle_ANIM_api 1.0s infinite ease-in-out;
+    animation: header_NotificationCircle_ANIM_api 1.0s infinite ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.idle{
+    background-color: #faa61a;
+    -webkit-box-shadow: inset 0px 0px 6px -1px #faa61a;
+    -moz-box-shadow: inset 0px 0px 6px -1px #faa61a;
+    -o-box-shadow: inset 0px 0px 6px -1px #faa61a;
+    box-shadow: inset 0px 0px 6px -1px #faa61a;
+    opacity: 1;
+    -webkit-animation: header_NotificationCircle_ANIM_idle 1.0s infinite ease-in-out;
+    -moz-animation: header_NotificationCircle_ANIM_idle 1.0s infinite ease-in-out;
+    -o-animation: header_NotificationCircle_ANIM_idle 1.0s infinite ease-in-out;
+    animation: header_NotificationCircle_ANIM_idle 1.0s infinite ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+@-webkit-keyframes header_NotificationCircle_ANIM_idle {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 #faa61a;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @keyframes header_NotificationCircle_ANIM_idle {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #faa61a;
+      box-shadow: 0 0 0 0 #faa61a;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+@-webkit-keyframes header_NotificationCircle_ANIM_api {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 #43b581;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @keyframes header_NotificationCircle_ANIM_api {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #43b581;
+      box-shadow: 0 0 0 0 #43b581;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+@-webkit-keyframes header_NotificationCircle_ANIM_err {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0.8);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @keyframes header_NotificationCircle_ANIM_err {
+    0% {
+      -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0.8);
+      box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0.8);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @-webkit-keyframes header_NotificationCircle_ANIM {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 #747f8d;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @keyframes header_NotificationCircle_ANIM {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #747f8d;
+      box-shadow: 0 0 0 0 #747f8d;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+body {
+    background: var(--bg-2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+} 
+.userEmbed {
+    /* margin: 30px; */
+}
+.userEmbed .userHead {
+    border-bottom: 4px solid var(--bg-1-light);
+}
+.userEmbed .userHead .avatarHolder {
+    position: relative;
+}
+.userEmbed .userHead .avatarHolder .avatar {
+    border-radius: 20px;
+    height: 130px;
+    width: 130px;
+    float: left;
+}
+.userEmbed .userHead .avatarHolder .status {
+    position: absolute;
+    top: 110px;
+    left: 115px;
+}
+.userEmbed .userHead .badges {
+    display: inline;
+    margin-left: 30px;
+    padding: 10px;
+}
+.userEmbed .userHead .username {
+    background-color: var(--bg-2);
+    display: inline;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.userEmbed .userHead .discriminator {
+    color: var(--bg-1-light);
+}
+.userEmbed .userHead .badges img {
+    width: 30px;
+}
+.userEmbed .bio {
+    margin-left: 150px;
+    background-color: var(--bg-2);
+    display: inline;
+    margin-left: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+.userEmbed .copyright {
+    background: var(--bg-2);
+    margin-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-width: 100%;
+}
+.userEmbed .copyright img {
+    float: left;
+    width: 30px;
+    border: 2px solid var(--bg-2);
+    border-radius: 50%;
+    margin-right: 20px;
+}

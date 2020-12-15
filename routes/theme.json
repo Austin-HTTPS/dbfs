@@ -1,0 +1,14 @@
+{
+    "bg1": "#1b2a4b",
+    "bg1l": "#1f3055",
+    "bg2": "#0f1a31",
+    "primary": "#49a1ff",
+    "primaryDark": "#4194ec",
+    "font": "white",
+    "fontGray": "rgba(250, 250, 250, 0.801)",
+    "tretraty": "#465689",
+    "accent": "#465689",
+    "dbtn": "#7289DA",
+    "error": "rgba(200, 0, 0, 1)",
+    "featured": "gold"
+}

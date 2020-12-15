@@ -1,0 +1,8 @@
+{
+    "error": "#FF0400",
+    "success": "#1CFF00",
+    "info": "#49a1ff",
+    "danger": "#FF9600",
+    "gold": "#FFD700",
+    "premium": "#ff73fa"
+}

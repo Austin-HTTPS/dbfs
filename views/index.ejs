@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/userEmbed.css">
+  <link rel="stylesheet" href="/css/status.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- 
+    Inspired by: disframe.xyz
+   -->
+</head>
+<body>
+  <div class="userEmbed" id="<%= user.id %> ">
+    <div class="userHead">
+      <div class="avatarHolder">
+        <img draggable="false" class="avatar" src="https://cdn.discordapp.com/avatars/<%= user.id %>/<%= user.avatar %>.webp" alt="<%= user.username %>'s avatar.">
+        <div class="status <%= user.presence.status %>"></div>
+      </div>
+      <br>
+      <h1 class="username"><%= user.username %><span class="discriminator">#<%= user.discriminator %></span></h1> 
+      <br>
+      <br>
+      <div class="badges">
+        <% if(db.wezaconStaff){ %>
+          <img draggable="false" src="https://cdn.discordapp.com/icons/761891076834852884/791f2fd598990561b5f3740d5a9ef1f6.webp?size=256">
+        <% } %>  
+        <% if(db.partner){ %>
+          <i style="font-size: 30px;" class="fas fa-handshake"></i>
+        <% } %> 
+        <% if(team){ %>
+          <img draggable="false" src="https://preview.redd.it/e63co024yh741.png?auto=webp&s=b19a5b9292c346b3471496f0b554eb18234271aa" alt="">
+        <% } %>
+        <% if(partner){ %>
+          <img draggable="false" src="https://emoji.gg/assets/emoji/9895_new_discord_partner_2.png" alt="">
+        <% } %>
+        <% if(bug2){ %>
+          <img draggable="false" src="https://emoji.gg/assets/emoji/9552_BugHunterLvl2.png" alt="">
+        <% } %>
+        <% if(bug1){ %>
+          <img draggable="false" src="https://emoji.gg/assets/emoji/BugHunter.png" alt="">
+        <% } %>
+        <% if(events){ %>
+          <img draggable="false" src="https://discordia.me/uploads/hypesquad/hypesquad.png" alt="">
+        <% } %>
+        <% if(developer){ %>
+          <img draggable="false" src="https://i.imgur.com/o12Ofsx.png" alt="">
+        <% } %>
+        <% if(supporter){ %>
+          <img src="https://dscrd.info/img/512.png" draggable="false" alt="">
+        <% } %>
+        <% if(brave){ %>
+          <img draggable="false" src="https://vignette.wikia.nocookie.net/hypesquad/images/4/41/BraveryLogo.png/revision/latest?cb=20180825044200" alt="">
+        <% } %>  
+        <% if(balance){ %>
+          <img draggable="false" src="https://vignette.wikia.nocookie.net/hypesquad/images/4/4f/BalanceLogo.png/revision/latest/scale-to-width-down/340?cb=20180825045553" alt="">
+        <% } %>  
+        <% if(brill){ %>
+          <img draggable="false" src="https://vignette.wikia.nocookie.net/hypesquad/images/8/8f/BrillianceLogo.png/revision/latest/scale-to-width-down/340?cb=20180825045035" alt="">
+        <% } %> 
+      </div>
+    </div>
+    <div class="bio">
+      <%- db.bio %> 
+    </div>
+    <br><br><br>
+    <a href="https://dbsl.ga/s/761891076834852884" target="_blank">
+    <div class="copyright">
+      <img draggable="false" src="https://cdn.discordapp.com/icons/761891076834852884/791f2fd598990561b5f3740d5a9ef1f6.webp?size=256" alt="">
+      <h4>Powered by <span>DBFS (<%= widgets %> widgets created)</span></h4>
+    </div>
+    </a>
+  </div>
+</body>
+</html>

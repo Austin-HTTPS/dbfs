@@ -1,0 +1,49 @@
+.topBar {
+    color: var(--font);
+}
+.topBar .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.1em;
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    font-size: 1.15em;
+}
+.topBar .content i {
+    font-size: 30px;
+    color: hsla(0, 0%, 40%, 1);
+    -webkit-animation: err_icon 2.0s infinite ease-in-out;
+    -moz-animation: err_icon 2.0s infinite ease-in-out;
+    -o-animation: err_icon 2.0s infinite ease-in-out;
+    animation: err_icon 2.0s infinite ease-in-out;
+}
+@-webkit-keyframes err_icon {
+    0%, 25%, 45%, 65%, 100% {
+      color: #888888;
+    } 15%, 35%, 55% {
+      color: rgb(146, 7, 7);
+    }
+  }
+  @-moz-keyframes err_icon {
+    0%, 25%, 45%, 65%, 100% {
+      color: #888888;
+    } 15%, 35%, 55% {
+      color: rgb(146, 7, 7);
+    }
+  }
+  @-o-keyframes err_icon {
+    0%, 25%, 45%, 65%, 100% {
+      color: #888888;
+    } 15%, 35%, 55% {
+      color: rgb(146, 7, 7);
+    }
+  }
+  @keyframes err_icon {
+    0%, 25%, 45%, 65%, 100% {
+      color: #888888;
+    } 15%, 35%, 55% {
+      color: rgb(146, 7, 7);
+    }
+  }

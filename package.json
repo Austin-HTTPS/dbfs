@@ -1,0 +1,61 @@
+{
+  "name": "dbfs",
+  "version": "1.0.0",
+  "description": "The powerfull server list",
+  "main": "server.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "ansi-regex": "^2.1.1",
+    "array-back": "^3.1.0",
+    "autolinker": "^3.14.2",
+    "body-parser": "^1.19.0",
+    "btoa": "^1.2.1",
+    "cookie-parser": "^1.4.5",
+    "cookies": "^0.8.0",
+    "disco-oauth": "^4.2.7",
+    "discord-xp": "^1.0.6",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fetch": "^1.1.0",
+    "fs": "0.0.1-security",
+    "memorystore": "^1.6.2",
+    "mongoose": "^5.10.9",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "node-opus": "^0.3.3",
+    "nodemon": "^2.0.4",
+    "opusscript": "0.0.7",
+    "passport": "^0.4.1",
+    "passport-discord": "^0.1.4",
+    "path": "^0.12.7",
+    "snekfetch": "^4.0.4",
+    "uptime-robot": "^1.3.0",
+    "url": "^0.11.0",
+    "ytdl-core": "^4.0.6"
+  },
+  "scripts": {
+    "dev": "cls && nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wezacon/dbos.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "website",
+    "node.js"
+  ],
+  "author": "Team Wezacon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wezacon/dbos/issues"
+  },
+  "homepage": "https://github.com/wezacon/dbos#readme"
+}
