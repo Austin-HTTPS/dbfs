@@ -18,7 +18,4 @@ CL -> Command Log - Enabled with `"commandLogging": true`
 
 - (prefix)addbadge [userID] [badge_name] - Can be used by Super Admins 
 - (prefix)clearbadges [userID] - Can be used by super admins
-``` "# DBES" 
-"# DBFS" 
-"# DBFS" 
-"# DBFS" 
+``` 
