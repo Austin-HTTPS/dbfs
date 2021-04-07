@@ -4,7 +4,7 @@ const color = require('../colors.json');
 const pack = require('../package.json');
 module.exports.run = async (bot, message, args) => {
     try {
-        message.reply("->\n`?bio`\n`?embed`\n`?activate`")
+        message.reply("->\n`?bio`\n`?embed`\n`?activate`\n`?vanity`\n\n**Developer Options**\n`?apikey`")
     } catch (error) {
         const c = require("../colors.json");
         const Err_1 = new Discord.MessageEmbed()

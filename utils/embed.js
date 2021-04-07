@@ -9,6 +9,6 @@ module.exports = async function newEmbed(msg, content, bot, title, channelId) {
     embed.setDescription(content)
     embed.setTimestamp()
     embed.setColor('#1dda8f')
-    embed.setFooter("© Wezacon.com");
+    embed.setFooter("© seer-software.com");
     logc.send(embed)
 };

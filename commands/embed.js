@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
             var end = data.vanity;
         }
         message.react('✉️')
-        author.send(`Please put the following code on a website that you own!\n\`\`\`html\n <iframe src="${config.siteUrl}/${end}" width="500" height="335" style="border-radius: 20px; border: none;"></iframe>\n\`\`\``)
+        author.send(`Please put the following code on a website that you own!\n\`\`\`html\n <iframe src="${config.siteUrl}/u/${end}" width="500" height="335" style="border-radius: 20px; border: none;"></iframe>\n\`\`\``)
     } catch (error) {
         const c = require("../colors.json");
         const Err_1 = new Discord.MessageEmbed()

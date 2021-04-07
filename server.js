@@ -23,7 +23,7 @@ if(config.server.invite == ''){
   console.log('ERROR -> You need to input a prefix, example: !\nStopping process.');
   process.exit(1);
 } else if(config.bot.token == ''){
-  console.log('ERROR -> You need to input a bot token, example: NzUzMjc0MTU1MjgxMTU0MTY4.X1jzOQ.RwEgbwp5a_2svPcUijU6wrAY9Dg\nStopping process.');
+  console.log('ERROR -> You need to input a bot token, example: NzUzMjc0MTU1MjeWEwadgxMTU0MTY4.X1wdadwjzOQ.RwEgbwp5a_2svPcUijU6wrAY9Dg\nStopping process.');
   process.exit(1);
 } else {
   const discordBot = require("./bot");

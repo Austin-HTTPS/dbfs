@@ -2,9 +2,17 @@ const { Message } = require('discord.js');
 const { Schema, model } = require('mongoose');
 const config = require('../config.json');
 const date = new Date();
+const randomNumGen1 = Date.now();
+const randomNumGen2 = Math.floor(Math.random() * 101);
+const KEY = randomNumGen1 + randomNumGen2;
 
 const user = Schema({
     id: String,
+    apiKey: {
+        type: String,
+        unique: true,
+        default: KEY
+    },
     bio: {
         type: String,
         default: "This user does not have a bio yet."

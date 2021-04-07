@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         const auth = bot.users.cache.get(message.author.id);
         message.react('✉️')
         if(dbu.disabled) return auth.send('Error, Your widget was disabled.');
-        const vanityUrl = args[0];
+        const vanityUrl = args[0].toLowerCase();
         if(!vanityUrl) return message.reply('Please insert a vanity Url. (ex: wezacon)');
         const exists = await db.findOne({ vanity: vanityUrl });
         if(exists) return message.reply('This vanity is already taken.')

@@ -113,8 +113,8 @@ bot.on("message", async message => {
         const newUser = new UserModel({ id: author.id });
         await newUser.save();
         message.react('✉️')
-        getUser.send(`Hello ${author.username}! I have created an embed for you which you can put on any website you want to show off your discord profile!\nUse the following code on any website:\n\n\`\`\`html\n <iframe src="${config.siteUrl}/${message.author.id}" width="500" height="335" style="border-radius: 20px; border: none;"></iframe>\n\`\`\``)
-        embed('', `[${author.user.tag}] has their widget created.\n[${auhtor.id}]`, bot, 'Widget Creation', config.bot.moderation.entryLogging.channelLogId)
+        getUser.send(`Hello ${author.username}! I have created an embed for you which you can put on any website you want to show off your discord profile!\nUse the following code on any website:\n\n\`\`\`html\n <iframe src="${config.siteUrl}/u/${message.author.id}" width="500" height="335" style="border-radius: 20px; border: none;"></iframe>\n\`\`\``)
+        embed('', `[${author.tag}] has their widget created.\n[${author.id}]`, bot, 'Widget Creation', config.bot.moderation.entryLogging.channelLogId)
     }
 
     if (config.bot.messageLogging == true) { console.log('ML -> [' + message.guild.name + '] -> ' + messageAuthor + ': ' + message.content) }

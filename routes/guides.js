@@ -9,7 +9,7 @@ require('dotenv').config({path: __dirname + '/.env'})
 app.set('view engine', 'ejs');
 const UserModel = require("../models/user");
 
-router.get("/:id", async function(req, res) {
+router.get("/u/:id", async function(req, res) {
   const UID = req.params.id;
   try {
     const db = await UserModel.findOne({ $or: [ {id: UID }, {vanity: UID} ] });
